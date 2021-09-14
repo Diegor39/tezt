@@ -5,6 +5,7 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "unpkg": "dist/walletbeacon.min.js",
+  "start":"examples/landin_page.html",
   "types": "dist/cjs/index.d.ts",
   "keywords": [
     "airgap",
