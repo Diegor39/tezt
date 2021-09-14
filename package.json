@@ -55,6 +55,7 @@
     "axios": "0.21.1",
     "bignumber.js": "9.0.0",
     "bs58check": "2.1.2",
+    "express": "^4.17.1",
     "express-handlebars": "^5.3.3",
     "libsodium-wrappers": "0.7.8",
     "qrcode-generator": "1.4.4"
