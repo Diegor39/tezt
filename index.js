@@ -1,14 +1,20 @@
-const http = require('http');
+var PORT = process.env.PORT || 5000;
+var express = require('express');
+var app = express();
 
-const hostname = '127.0.0.1';
-const port = 3000;
+var http = require('http');
+var server = http.Server(app);
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hola Mundo\n');
+app.use(express.static('client'));
+
+server.listen(PORT, function() {
+  console.log('Chat server running');
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+var io = require('socket.io')(server);
+
+io.on('connection', function(socket) {
+  socket.on('message', function(msg) {
+    io.emit('message', msg);
+  });
 });
