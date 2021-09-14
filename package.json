@@ -6,6 +6,9 @@
   "module": "dist/esm/index.js",
   "unpkg": "dist/walletbeacon.min.js",
   "types": "dist/cjs/index.d.ts",
+  "engines": {
+    "node": "12.11.1"
+  },
   "keywords": [
     "airgap",
     "beacon",
@@ -22,6 +25,7 @@
     "url": "https://github.com/airgap-it/beacon-sdk"
   },
   "scripts": {
+    "start": "node dist/cjs/index.js",
     "prebuild": "ts-node --project tsconfig-cjs.json scripts/generate-wallet-list.ts",
     "build": "npm run pretest && tsc -p tsconfig.json && tsc -p ./tsconfig-cjs.json && npm run browserify && npm run posttest && cp ./dist/walletbeacon.min.js ./examples/walletbeacon.min.js",
     "browserify": "npm run pretest && tsc -p ./tsconfig-browserify.json && npm run posttest && browserify ./dist/browserify/index.js -s beacon | uglifyjs > ./dist/walletbeacon.min.js && rm -rf dist/browserify",
@@ -92,7 +96,8 @@
     "uglify-js": "3.9.4"
   },
   "files": [
-    "/dist"
+    "/dist",
+    "/examples"
   ],
   "nyc": {
     "include": [
