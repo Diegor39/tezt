@@ -5,7 +5,7 @@ http = require('http').Server(app),
 io = require('socket.io')(http);
 
 app.get('/', function(req, res){
-    res.sendFile(__dirname + '/landin_page.html');
+    res.sendFile(__dirname + '/landing_page.html');
 });
 
 io.on('connection', function(socket){
