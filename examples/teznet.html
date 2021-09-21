@@ -15,19 +15,17 @@
     </script>
 
     <script src="./walletbeacon.min.js"></script>
-
-    <style>
-      /* To test if our UI is affected by global styles */
-
-      span {
-        background-color: orange;
-      }
-    </style>
   </head>
 
   <body>
     <nav class="navbar navbar-dark bg-dark ">
         <a class="navbar-brand" style="color: snow;">Unibotz</a>
+        <span>
+            Active account:
+            <span id="activeAccount"></span>
+            <span id="activeAccountNetwork"></span>
+            <span id="activeAccountTransport"></span>
+        </span>
         <button class="btn btn-light" id="requestPermission">Sync</button>
     </nav>
     <br /><br />
@@ -62,7 +60,7 @@
                 </div>
             <br /><br />
           <div>
-            <H4>Total: $0.00 tz</H4>
+            <H4>Total: $0.00 XTZ</H4>
           </div>
           <br /><br />
           <div>
@@ -114,12 +112,6 @@
       <br /><br />
       <br /><br />
       <br /><br />
-    <span>
-      Active account:
-      <span id="activeAccount"></span>
-      <span id="activeAccountNetwork"></span>
-      <span id="activeAccountTransport"></span>
-    </span>
     <br /><br />
 
     <button id="sendToSelf">Send 1 mutez to myself</button>
