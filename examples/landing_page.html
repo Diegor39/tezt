@@ -7,7 +7,9 @@
     <title>My Items</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script>
       // This will enable the debug mode of beacon
       // This should only be used during development
@@ -17,10 +19,45 @@
     <script src="./walletbeacon.min.js"></script>
 
     <style>
-      /* To test if our UI is affected by global styles */
-
       span {
-        background-color: orange;
+        color: snow;
+      }
+      body{
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/53/Vaporwave-4K-Wallpapers.jpg);
+        background-attachment: fixed;
+        overflow: scroll;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        cursor: url(/assets/mano-robotica.png), auto;
+      }
+      h1{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 50px;
+        color: rgb(14, 211, 14);
+      }
+      h2{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 25px;
+        color: rgb(14, 211, 14);
+      }
+      h3{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: rgb(14, 211, 14);
+      }
+      h4{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: rgb(14, 211, 14);
+      }
+      h5{
+        font-family: 'Roboto Condensed', sans-serif;
+      
+        color: rgb(14, 211, 14);
+
+
+      }
+      a{
+        font-family: 'Press Start 2P', cursive;
       }
     </style>
   </head>
@@ -28,68 +65,52 @@
   <body>
     <nav class="navbar navbar-dark bg-dark ">
         <a class="navbar-brand" style="color: snow;">Unibotz</a>
-        <button class="btn btn-light" id="requestPermission">Sync</button>
+        <div>
+          <ion-icon name="logo-twitter" size="large" style="color: snow;"></ion-icon>
+          <ion-icon name="logo-discord" size="large" style="color: snow;"></ion-icon>
+          <span>
+            Active account:
+            <span id="activeAccount"></span>
+            <span id="activeAccountNetwork"></span>
+            <span id="activeAccountTransport"></span>
+          </span>
+          <button class="btn btn-light" id="requestPermission">Sync</button>
+        </div>
     </nav>
     <br /><br />
 
     <div class="container">
         <div class="row">
             <div class="col">
-                <H1>Unibotz: Battling for a sustainable and clean NFT ecosystem.  </H1>
-                <br /><br />
+              <br /><br />
+                <center><H1>Unibotz</H1></center><br /><br />
+                <h3>Battling for a sustainable and clean NFT ecosystem.  </h3>
             </div>
             <div class="col">
-                <h2>Elegir entre 1 a 20 objetos como maximo.</h2>
-                <br /><br />
-                <div class="input-group mb-3">
-                  <select class="custom-select" id="inputGroupSelect03">
-                    <option selected>Choose...</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>                   
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>                   
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                  </select>
-                </div>
+                <center><img src="../assets/unibot_1.png" alt="" style="width: 70%;"></center>
             </div>
-            <br /><br />
-          <div>
-            <H4>Total: $0.00 tz</H4>
-          </div>
-          <br /><br />
-          <button class="btn btn-light">Comprar</button>
         </div>
     </div>
     <br /><br />
 
-    <div class="container">
-      <h1>What are the Unibotz?</h1>
+    <div class="container" style="background-color: rgb(2, 47, 2);">
+      <br /><br />
+      <center><h2>What are the Unibotz?</h2></center>
+
       <h5>
         The Unibotz is a collection of randomly generated NFTs coming to the Tezos blockchain in October 2021. 
         
         They are assembled in our mechanical shop and are made of recycled parts. 
         
         The Unibotz are here to save crypto from the self-destruction ways some have created. Become an Unibot by minting one and help us win this battle!   </h5>
+        <br /><br />
     </div>
   <br /><br />
 
-  <div class="container">
-    <h1>There are three types of unibotz:</h1>
+  <div class="container" style="background-color: rgb(2, 47, 2);">
+    <br /><br />
+    <center><h2>There are three types of unibotz:</h2></center>
+
     <h5>
         1. The Stakerz: make sure your gas fees stay low! 
         The Stakerz fight those using non-efficient techniques like proof of work and try to make proof of stake the norm. 
@@ -100,11 +121,14 @@
         3. The Connoizzeurs:  spot art masterpieces before anyone else! 
         Scanning thousands of NFTs per second, they make sure revolutionary art is not wasted.
     </h5>
+    <br /><br />
   </div>
 <br /><br />
 
-<div class="container">
-  <h1>Wow sounds cool, but how are you providing any value?</h1>
+<div class="container" style="background-color: rgb(2, 47, 2);">
+  <br /><br />
+  <center><h2>Wow sounds cool, but how are you providing any value?</h2></center>
+
   <h5>
     A) Unibotz Fund
     
@@ -119,65 +143,125 @@
     B) Donation to an org that is aligned with our values.
     We want to make a big impact out of the gates. That is why we will donate 5% of the launch earnings to an organization aligned with our values.
   </h5>
+  <br /><br />
 </div>
 <br /><br />
 
 <div class="container">
-  <h1>The Team</h1>
-  <h5>
-- Kaloh: Crypto art writer, promoter, and collector - www.kaloh.xyz / Twitter
-
-Assembled the team and takes care of marketing and communications.
-
-- Multivac: Group of creatives and illustrators known for their Tezos works and “Every day is a new day” collection - URL / Twitter
-
-Lead artists and designers.
-
-- Datzel:  Tezos OG creating dark and wicked pieces. Supporting up-and-coming artists from his own pocket for a long time - URL / Twitter
-
-Community builder and fund advisor.
-
-- WGMI Studio: Experienced developers taking care everything runs smoothly.  TBD***
-  </h5>
+  <center><h2>The Team</h2></center>
+<br /><br />
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="../assets/1.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Kaloh</h5>
+      <p class="card-text">Crypto art writer, promoter, and collector - www.kaloh.xyz / Twitter
+        Assembled the team and takes care of marketing and communications.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="../assets/2.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Multivac</h5>
+      <p class="card-text">Group of creatives and illustrators known for their Tezos works and “Every day is a new day” collection - URL / Twitter
+        Lead artists and designers.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="../assets/3.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Datzel</h5>
+      <p class="card-text">Tezos OG creating dark and wicked pieces. Supporting up-and-coming artists from his own pocket for a long time - URL / Twitter</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
 </div>
 <br /><br />
-
-    <div class="container">
-        <h2>Nuestras colecciones en adopción</h2>
-        <br /><br />
-        <div class="row">
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://www.tezzardz.xyz/assets/tezzard-006.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Tezzardz</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a id="sendToSelf"  class="btn btn-warning">Adoptar!</a>
-                </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://uploads-ssl.webflow.com/5ead65b4cd1146b85071bfdf/608ff1624f685407965b0180_Bored%20Ape%200-%20Image%201.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Boring ape</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a id="sendToSelf"  class="btn btn-warning">Adoptar!</a>
-                </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://pbs.twimg.com/media/E-1WgI3VEAYHrvW.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Pinguino cool</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a id="sendToSelf"  class="btn btn-warning">Adoptar!</a>
-                </div>
-            </div>
-          </div>
+<h5>
+  Community builder and fund advisor.
+  
+  - WGMI Studio: Experienced developers taking care everything runs smoothly.  TBD***</h5>
+ 
+</div>
+<br /><br />
+<div class="container">
+  <h2>FAQ</h2>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            WHAT IS AN NFT?
+          </button>
+        </h5>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
         </div>
       </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            WHAT IS A UNIBOT?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            HOW TO BUY A UNIBOT
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br></br>
+<div class="container">
+  <center><h2>Contact us</h2></center>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Your email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Message</label>
+      <textarea type="text" class="form-control" id="inputAddress" placeholder="Message"></textarea>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+        I have read and agree to the privacy policy, terms of service, and community guidelines.  
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+</div>
+
+
+
       <br /><br />
       <br /><br />
       <br /><br />
@@ -185,12 +269,7 @@ Community builder and fund advisor.
       <br /><br />
       <br /><br />
       <br /><br />
-    <span>
-      Active account:
-      <span id="activeAccount"></span>
-      <span id="activeAccountNetwork"></span>
-      <span id="activeAccountTransport"></span>
-    </span>
+    
     <br /><br />
 
     <button id="sendToSelf">Send 1 mutez to myself</button>
@@ -584,5 +663,7 @@ Community builder and fund advisor.
     <script>
         var socket = io();
     </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
