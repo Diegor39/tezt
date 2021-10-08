@@ -1,11 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
+    <link rel="shortcut icon" href="/assets/unibotz/logos/final.png">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="Content-Style-Type" content="text/css" />
-    <title>My Items</title>
+    <title>Unibotz</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,9 +86,6 @@
     </style>
 
     <style>
-      span {
-        color: snow;
-      }
       body{
         background-image: url(/assets/fondo_1.jpeg);
         
@@ -134,20 +132,31 @@
         color: rgb(67,138,95,255);
       }
       span{
+        color: snow;
         font-family: 'Press Start 2P', cursive;
-        font-size: 10px;
+      }
+      @media only screen and (max-width: 1026px) { 
+        #fadeshow1 { 
+        display: none; 
+        } 
+      }
+      @media only screen and (min-width: 1026px) { 
+        #fadeshow2 { 
+        display: none; 
+        } 
       }
     </style>
+    
   </head>
 
   <body>
-    <p></p>
-    <nav class="navbar  navbar-expand-lg navbar-light" style="align-self: center;">
+    <br />
+    <nav class="navbar  navbar-expand-lg navbar-light">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="container" style="align-self: center;">
-          <div class="row mx-auto">
+        <div class="container" style="margin-left: 23%;">
+          <div class="row mx-auto" style="width: 90%; ">
             <div class="col-sm" >
-              <a href=""><h3 style="color:white;">STATS</h3></a>
+              <a href=""><h3 style="color:white; ">STATS</h3></a>
             </div>
             <div class="col-sm">
               <a href=""><h3 style="color:white;">ABOUT</h3></a>
@@ -158,7 +167,7 @@
             <div class="col-sm">
               <button class="btn btn-light" id="requestPermission" style="background: NONE; border: none;"><h3 style="color: rgb(96,186,76,255); margin-top: -2.2%;">>CONNECT WALLET</h3></button>
             </div>
-            <div class="col-sm">
+            <div class="col-sm" style="margin-left: 8%;">
               <a href="https://twitter.com/unibotz/status/1442473957056204808?s=20"><img src="../assets/twitter.png" alt="" style="width: 35px;"></a>
             </div>
             <div class="col-sm">
@@ -166,121 +175,237 @@
             </div>
           </div>
         </div> 
-      </div>
-      
+      </div>    
     </nav>
+
+      <div class="container" id="fadeshow2">
+        <div style="margin-left: 0%;">
+          <div class="row mx-auto">
+            <div class="col-8">
+              <button class="btn btn-light" id="requestPermission" style="background: NONE; border: none;"><h3 style="color: rgb(96,186,76,255); margin-top: -2.2%;">> SYNC</h3></button>
+            </div>
+            <div class="col-2">
+              <a href="https://twitter.com/unibotz/status/1442473957056204808?s=20"><img src="../assets/twitter.png" alt="" style="width: 25px;"></a>
+            </div>
+            <div class="col-2">
+              <a href="https://discord.gg/pgXpkzv9"><img src="../assets/discord.png" alt="" style="width: 20px;"></a>
+            </div>
+          </div>
+        </div> 
+      </div>    
+  
+    <p></p>
     <center>
-      <span>
+      <span style="font-size: 10px;">
           <span id="activeAccount"></span>
           <span id="activeAccountNetwork"></span>
           <span id="activeAccountTransport"></span>
       </span>
     </center>
 
-    <div class="container">
-      <br /><br />
-      <center><img src="../assets/logo1.png" alt="" style="width: 60%;"></center>
-      <br /><br />
+    <div class="container" style="margin-top: 2%;" id="fadeshow1">
+      <br /><br /><br /><br />
+      <center><img src="../assets/unibotz/logos/logoanimado.gif" alt="" style="width: 60%;"></center>
+      <br /><br /><br />
+      <h3 class="mx-auto" style="color: white;text-align: center; width: 50%;">BATTLING FOR A SUSTAINTABLE AND CALEAN NFT ECOSYSTEM.</h3>
+      <br /><br /><br />
       <center><h1 class="line-1 anim-typewriter" style="font-size: 17px">ARE YOU READY?</h1></center>
       <br /><br />
     </div>
 
+    <div class="container" id="fadeshow2">
+      <br /><br />
+      <center><img src="../assets/unibotz/logos/logoanimado.gif" alt="" style="width: 90%;"></center>
+      <br /><br /><br />
+      <h3 class="mx-auto" style="color: white;text-align: center; width: 80%;">BATTLING FOR A SUSTAINTABLE AND CALEAN NFT ECOSYSTEM.</h3>
+      <br /><br /><br />
+      <center><h1 class="line-1 anim-typewriter" style="font-size: 17px">ARE YOU READY?</h1></center>
+      <br /><br />
+    </div>
 
-      <div class="row no-gutters mx-auto" style="background-color: black; width: 100%; margin-left: none;">
-        <div class="col" style="background-color: black;">
-          <p></p>
-          <img src="../assets/unibotz/1.png" alt="" style="width: 100%;">
-        </div>
-        <div class="col">
-          <p></p>
-          <img src="../assets/unibotz/5.png" alt="" style="width: 100%;">
-        </div>
-        <div class="col">
-          <p></p>
-          <img src="../assets/unibotz/3.png" alt="" style="width: 100%;">
-        </div>
-        <div class="col">
-          <p></p>
-          <img src="../assets/unibotz/4.png" alt="" style="width: 100%;">
-        </div>
-        <div class="col">
-          <p></p>
-          <img src="../assets/unibotz/2.png" alt="" style="width: 100%;">
-        </div>
-        <div class="col">
-          <p></p>
-          <img src="../assets/unibotz/6.png" alt="" style="width: 100%;">
+    <div id="fadeshow1">
+      <div id="carouselExampleSlidesOnly " class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <div class="row no-gutters mx-auto">
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/1.png" alt="First slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/2.png" alt="First slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/3.png" alt="First slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/4.png" alt="First slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/5.png" alt="First slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/6.png" alt="First slide" style="width: 4%;">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row no-gutters mx-auto">
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/7.png" alt="Second slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/8.png" alt="Second slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/9.png" alt="Second slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/10.png" alt="Second slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/11.png" alt="Second slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/12.png" alt="Second slide" style="width: 4%;">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      
-    <div style="background-image: url(/assets/fondo_2.jpeg);">
-      <div style="background-color: black">
-        
-        <br /><br />
-        <center><h2 style="font-size: 20px;">- "WHAT ARE THE UNIBOTZ"</h2></center>
-        <br /><br />
+    </div>
+    
+    <div id="fadeshow2">
+      <div id="carouselExampleSlidesOnly" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <div class="row no-gutters mx-auto">
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/1.png" alt="First slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/2.png" alt="First slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/3.png" alt="First slide" style="width: 4%;">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row no-gutters mx-auto">
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/7.png" alt="Second slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/8.png" alt="Second slide" style="width: 4%;">
+              </div>
+              <div class="col">
+                <img class="d-block w-100" src="../assets/unibotz/9.png" alt="Second slide" style="width: 4%;">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    
+    
+    <div>
+      <br /><br />
+      <div class="mx-auto" id="fadeshow1">
+        <center><img src="/assets/unibotz/titulos/Recurso 16.png" alt=""></center>
+      </div>
+      <div class="mx-auto" id="fadeshow2">
+        <center><img src="/assets/unibotz/titulos/Recurso 16.png" alt="" style="width: 90%;"></center>
+      </div>
+
       <div class="container mx-auto no-gutters" >
         <br /><br />
-        <div class="card mx-auto col-lg-5 col-m-9 " style="  border-color: rgb(67,138,95,255); background-color: rgb(67,138,95,255); border-width: 5px; border-top-width: 0px;box-shadow: 0 10px 20px rgb(0, 0, 0), 0 6px 6px rgb(0, 0, 0); ">
+        <div class="card mx-auto col-lg-8 col-m-9 " style="  border-color: rgb(67,138,95,255); background-color: rgb(67,138,95,255); border-width: 5px; border-top-width: 0px;box-shadow: 0 10px 20px rgb(0, 0, 0), 0 6px 6px rgb(0, 0, 0); ">
           <div class="card-header" style="border-color: rgb(67,138,95,255); background-color: rgb(67,138,95,255); height: 50px;"><img src="../assets/Recurso 3.png" style="height: 100%; margin-left: 97%;"></div>
-          <div class="card-body" style="background-color: rgb(37,43,67,255);">
-            
-            <p class="card-text" style="color: white; text-align: center;">THE UNIBOTZ IS A COLLECTION OF NFTs COMING TO THE TEZOS BLOCKCHAIN IN OCTOBER 2021.</p>
-            <p class="card-text" style="color: white; text-align: center;">THESE BOTS ARE HERE TO SUPPORT THE CLEAN NFTs MOVEMENT.</p>
+          <div class="card-body" style="background-color: white">
+            <p class="card-text" style="color: black;">THE UNIBOTZ ARE COMING TO THE TEZOS BLOCKCHAIN IN OCTOBER 2021.</p>
+            <p class="card-text" style="color: black;">4210 BOTS ARE BEING ASSEMBLED TO SUPORT THE CLEAN NFTs MOVEMENT AND THE USAGE OF <span style="color: rgb(80,107,225,255);">RENEWABLE ENERGIES.</span></p>
           </div>
         </div>
         <br /><br />
       </div>
     </div>
 
-    <div style="background-image: url(/assets/fondo_2.jpeg); background-repeat: no-repeat; background-size: cover;">
-      <div style="background-color: black">
+    <div>
+      <div>
         <br /><br />
-        <center><h2 style="font-size: 20px;">- "WOW SOUNDS COOL, BUT HOW ARE YOU PROVIDING ANY VALUE?"</h2></center>
-        <br /><br />
+        <div class="mx-auto" id="fadeshow1">
+          <center><img src="/assets/unibotz/titulos/Recurso 18.png" alt="" ></center>
+        </div>
+        <div class="mx-auto" id="fadeshow2">
+          <center><img src="/assets/unibotz/titulos/Recurso 18.png" alt="" style="width: 90%;"></center>
+        </div>
       </div>
       <div class="container mx-auto no-gutters" >
         <br /><br />
-        <div class="card mx-auto col-lg-5 col-m-9" style=" background-color: rgb(37,43,67,255); border-color: rgb(67,138,95,255); border-width: 5px; border-top-width: 30px; box-shadow: 0 10px 20px rgb(0, 0, 0), 0 6px 6px rgb(0, 0, 0); ">
-          <div class="card-body">
-            <p class="card-text" style="color: white; text-align: center;">WHEN YOU COLLECT AN UNIBOT, PART OF THE COST IS GOING TO THE UNI-FUND AND [ORG].</p>
-            <h2 style="text-align: center">UNI-FUND</h2>
+        <div class="card mx-auto col-lg-8 col-m-9 " style="  border-color: rgb(67,138,95,255); background-color: rgb(67,138,95,255); border-width: 5px; border-top-width: 0px;box-shadow: 0 10px 20px rgb(0, 0, 0), 0 6px 6px rgb(0, 0, 0); ">
+          <div class="card-header" style="border-color: rgb(67,138,95,255); background-color: rgb(67,138,95,255); height: 50px;"><img src="../assets/Recurso 3.png" style="height: 100%; margin-left: 97%;"></div>
+          <div class="card-body" style="background-color: white">
+            <p class="card-text" style="color: black;">WHEN YOU PICK UP A UNIBOT, PART OF THE COST GOES TO THE ART FUND AND [ORG].</p>
+            <h2 style="text-align: center">ART FUND + ORG</h2>
             <p></p>
-            <p style="text-align: center; color: rgb(92,178,76,255);">10% OF SALES + 1% OF FUTURE ROYALTIES</p>
+            <p style="text-align: center; color: rgb(92,178,76,255);"><span style="color: rgb(80,107,225,255); font-size: 25px;">10%</span> OF SALES</p>
+            <p style="text-align: center; color: rgb(92,178,76,255);"><span style="color: rgb(80,107,225,255); font-size: 25px;">1%</span> OF FUTURE ROYALTIES</p>
           </div>
         </div>
         <br /><br />
       </div>
-      <div class="container mx-auto no-gutters" >
+
+
+      <div class=" col-lg-5 col-m-9 mx-auto">
+        <center><h2 style="color: white;">THE UNIBOTZ FUND HAS TOW CLEAR MISSIONS:</h2></center>
+        <center><img src="/assets/unibotz/Pantallas/Pantallayplanta (1).png" alt="" style="width: 90%;"></center>
+      </div>
+      <div class="mx-auto" id="fadeshow1">
+        <center><img src="/assets/unibotz/titulos/Recurso 19.png" alt=""></center>
+      </div>
+      <div class="mx-auto" id="fadeshow2">
+        <center><img src="/assets/unibotz/titulos/Recurso 19.png" alt="" style="width: 90%;"></center>
+      </div>
+      <div class=" mx-auto no-gutters" >
         <br /><br />
-        <div class="card mx-auto col-lg-9 col-m-12" style=" background-color: rgb(37,43,67,255); border-color: rgb(67,138,95,255); border-width: 5px; border-top-width: 30px; box-shadow: 0 10px 20px rgb(0, 0, 0), 0 6px 6px rgb(0, 0, 0); ">
-          <div class="card-body">
-            <div class="row">
-              <div class="col">
-                <p style="text-align: center; color: rgb(92,178,76,255);">SUPORT NFT ARTISTS</p>
-                <p style="color: white; font-size: 11px;">BY COLLECTING THE MOST PROMISING PIECES FROM UP-AND-COMING AND ESTABLISHED ARTISTS WITH THE
+        <div class="mx-auto col-lg-10 col-m-12">
+          <div class="">
+            <div class="row mx-auto">
+              <div class="col mx-auto">
+                <h2 style=" color: rgb(92,178,76,255);">SUPORT NFT ARTISTS</h2>
+                <p style="background: rgb(93,123,252,255); color: rgba(93,123,252,255); width: 45%; height: 9px;"></p>
+                <p style="color: white;">BY COLLECTING THE MOST PROMISING PIECES FROM UP-AND-COMING AND ESTABLISHED ARTISTS WITH THE
                 GOAL OF HELPING THEM KICKSTART THEIR CAREERS OR MAKE IT AS A FULL TIME ARTIST.</p>
               </div>
-              <div class="col">
-                <p style="text-align: center; color: rgb(92,178,76,255);">SCALE THE TEZOS ECONOMY</p>
-                <p style="color: white; font-size: 11px;">WE'D LIKE TO ONBOARD NEW ARTISTS, COLLECTORS, AND TECHNOLOGISTS INTO THE TEZOSCHAIN.</p>
-                <p style="color: white; font-size: 11px;">THE FUND WILL CONTINUE TO OPERATE IN THE FUTURE AS ITS OWN ENTITY AND CLOUD KICKSTART ADITIONAL PROJECTS.</p>
+              <div class="col mx-auto">
+                <h2 style="color: rgb(92,178,76,255);">SCALE THE TEZOS ECONOMY</h2>
+                <p style="background: rgb(93,123,252,255); color: rgba(93,123,252,255); width: 45%; height: 9px;"></p>
+                <p style="color: white;">WE'D LIKE TO ONBOARD NEW ARTISTS, COLLECTORS, AND TECHNOLOGISTS INTO THE TEZOSCHAIN.</p>
+                <p style="color: white;">THE FUND WILL CONTINUE TO OPERATE IN THE FUTURE AS ITS OWN ENTITY AND CLOUD KICKSTART ADITIONAL PROJECTS.</p>
               </div>
             </div>
-            <div class="card-body mx-auto" style="width: 80%; background-color: rgb(42,92,66,255);">
-              <h2 style="color: RGB(99,193,77,255); text-align: center;vertical-align: center;">DONATION TO [ORG] THAT IS ALIGNED WHIT OUR VALUES.</h2>
-            </div>
-            <P></P>
-            <p style="color: white; font-size: 11px;">WE WANT TO MAKE A BIG IMPACT OUT OF THE GATES. THAT IS WHY WE WILL <span style="color: rgb(65,134,93,255); font-size: 14px;">DONATE 5%</span> OF THE 
-            LAUNCH EARNINGS TO AN ORGANIZATION ALIGNED WITH OUR VALUES</p>
           </div>
         </div>
         <br /><br />
       </div>
     </div>
 
+    <div class="mx-auto col-lg-5 col-m-9 mx-auto">
+      <center><img src="/assets/unibotz/Pantallas/Pantallayplanta2 (1).png" alt="" style="width: 90%;"></center>
+    </div>
+    <div class="mx-auto" id="fadeshow1">
+      <center><img src="/assets/unibotz/titulos/Recurso 20.png" alt=""></center>
+    </div>
+    <div class="mx-auto" id="fadeshow2">
+      <center><img src="/assets/unibotz/titulos/Recurso 20.png" alt="" style="width: 90%;"></center>
+    </div>
+    <br /><br />
+    <div class="mx-auto col-lg-5 col-m-9;">
+      <p style="color: white;">
+        WE WANT TO MAKE A BIG IMPACT OUT OF THE GATES. THAT IS WHY WE WILL <span style="color: rgb(80,107,225,255);">DONATE 5%</span> OF THE LAUNCH EARNINGS TO AN 
+        ORGANIZATION ALIGNED WITH OUR VALUES.
+      </p>
+    </div>
 
     <div style="background-color: rgb(38,43,68,255);">
       <div style="background-color: rgb(57,129,134,255);">
@@ -292,48 +417,11 @@
       <br /><br />
     </div>
     
-
-    <div style="background-color: rgb(43,62,78,255);">
-      <br /><br />
-      <div class="container" >
-        <center><h2 >Wow sounds cool, but how are you providing any value?</h2></center>  
-        <P></P> 
-        <p style="color: rgb(225,233,229,255);">
-          When you collect an Unibot, part of the cost is going to the Uni-Fund and [ORG].
-        </p>
-        <h3>A) Uni-Fund</h3>
-        <p style="color: rgb(225,233,229,255);">  
-          5% of sales + 1% of future royalties [Illustration]
-        </p>
-        <p></p>
-        <h3>The Unibotz fund has two clear missions:</h3>
-        <p style="color: rgb(225,233,229,255);">  
-          1. Support NFT artists: by collecting the most promising pieces from up-and-coming and established artists with the goal of helping them kickstart their careers or make it as a full time artist.
-        </p>
-        <p style="color: rgb(225,233,229,255);">  
-          2. Scale the Tezos economy: We’d like to onboard new artists, collectors, and technologists into the Tezos chain. 
-        </p>
-        <p style="color: rgb(225,233,229,255);">  
-          The fund will continue to operate in the future as its own entity and could kickstart adittional projects. 
-        </p>
-        <p style="color: rgb(225,233,229,255);">  
-          We got some of the best tezos artists, collectors, and promoters in charge of the fund! We really do! check out our team below
-        </p>
-        <p></p>
-        <h3>B) Donation to [ORG] that is aligned with our values. [Illustration]</h3>
-        <p style="color: rgb(225,233,229,255);">  
-          We want to make a big impact out of the gates. That is why we will donate 5% of the launch earnings to an organization aligned with our values.
-        </p>
-      </div>
-      <br /><br />
-    </div>
-    
-    
-    <div style="background-color: rgb(0,96,68,255)">
+    <div>
       <div class="container">
         <br /><br />
-        <center><h2>THERE ARE THREE TYPES OF UNIBOTZ:</h2></center>
-        <p></p>
+        <center><h2>The Team</h2></center>
+        <br /><br />
         <div class="container">
           <div class="row">
             <div class="col">
@@ -342,7 +430,8 @@
             <div class="col-9">
               <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
                 <div class="card-body">
-                  <p class="card-text"><span style="color: rgb(14, 211, 14);">The Stakerz:</span> make sure your gas fees stay low! The Stakerz fight those using non-efficient techniques like proof of work and try to make proof of stake the norm.</p>
+                  <p class="card-text"><span style="color: rgb(14, 211, 14);">Kaloh:</span> Crypto art writer, promoter, and collector - www.kaloh.xyz / Twitter
+                    Assembled the team and takes care of marketing and communications.</p>
                 </div>
               </div>
             </div>
@@ -356,8 +445,8 @@
             <div class="col-9">
               <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
                 <div class="card-body">
-                  <p class="card-text"><span style="color: rgb(14, 211, 14);">The White Hatz:</span> work day and night finding scammers and hackers! 
-                    The White Hatz make sure your NFTs stay in your wallet and take down the copy minters.</p>
+                  <p class="card-text"><span style="color: rgb(14, 211, 14);">Multivac</span> Group of creatives and illustrators known for their Tezos works and “Every day is a new day” collection - URL / Twitter
+                    Lead artists and designers.</p>
                 </div>
               </div>
             </div>
@@ -371,8 +460,7 @@
             <div class="col-9">
               <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
                 <div class="card-body">
-                  <p class="card-text"><span style="color: rgb(14, 211, 14);">The Connoizzeurs:</span> spot art masterpieces before anyone else! 
-                    Scanning thousands of NFTs per second, they make sure revolutionary art is not wasted.</p>
+                  <p class="card-text"><span style="color: rgb(14, 211, 14);">Datzel</span> Tezos OG creating dark and wicked pieces. Supporting up-and-coming artists from his own pocket for a long time - URL / Twitter</p>
                 </div>
               </div>
             </div>
@@ -385,38 +473,7 @@
 
 <br /><br />
 
-<div class="container">
-  <center><h2>The Team</h2></center>
-<br /><br />
-<div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="../assets/1.png" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Kaloh</h5>
-      <p class="card-text">Crypto art writer, promoter, and collector - www.kaloh.xyz / Twitter
-        Assembled the team and takes care of marketing and communications.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="../assets/2.png" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Multivac</h5>
-      <p class="card-text">Group of creatives and illustrators known for their Tezos works and “Every day is a new day” collection - URL / Twitter
-        Lead artists and designers.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="../assets/3.png" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Datzel</h5>
-      <p class="card-text">Tezos OG creating dark and wicked pieces. Supporting up-and-coming artists from his own pocket for a long time - URL / Twitter</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div>
-<br /><br />
+
 <h5>
   Community builder and fund advisor.
   
@@ -511,6 +568,7 @@
     <br /><br />
     <p style="margin-top: 1000px;">End of page</p>
 
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -829,5 +887,12 @@
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('#show').click(function() {
+            $('.menu').toggle("slide");
+          });
+      });
+      </script>
   </body>
 </html>
