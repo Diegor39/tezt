@@ -173,17 +173,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="container" style="margin-left: 17%;">
           <div class="row mx-auto" style="width: 90%; ">
+            <div class="col-2">
+              <a href="#about"><h3 style="color:white;">ABOUT</h3></a>
+            </div>
+            <div class="col-2">
+              <a href="#team"><h3 style="color:white;">TEAM</h3></a>
+            </div>
             <div class="col-2" >
-              <a href=""><h3 style="color:white; ">STATS</h3></a>
-            </div>
+              <a href=""><h3 style="color:white; display: none;">STATS</h3></a>
+            </div>  
             <div class="col-2">
-              <a href=""><h3 style="color:white;">ABOUT</h3></a>
-            </div>
-            <div class="col-2">
-              <a href=""><h3 style="color:white;">ROADMAP</h3></a>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-light" id="requestPermission" style="background: NONE; border: none;"><h3 style="color: rgb(96,186,76,255); margin-top: -2.2%;">>CONNECT WALLET</h3></button>
+              <button class="btn btn-light" id="requestPermission" style="background: NONE; border: none; display: none"><h3 style="color: rgb(96,186,76,255); margin-top: -2.2%;">>CONNECT WALLET</h3></button>
             </div>
             <div class="col-m" style="margin-left: 17%;">
               <a href="https://twitter.com/unibotz/status/1442473957056204808?s=20"><img src="../assets/twitter.png" alt="" style="width: 35px;"></a>
@@ -200,12 +200,12 @@
         <div style="margin-left: 0%;">
           <div class="row mx-auto">
             <div class="col-8">
-              <button class="btn btn-light" id="requestPermission" style="background: NONE; border: none;"><h3 style="color: rgb(96,186,76,255); margin-top: -2.2%;">> SYNC</h3></button>
+              <button class="btn btn-light" id="requestPermission" style="background: NONE; border: none; display: none"><h3 style="color: rgb(96,186,76,255); margin-top: -2.2%;">> SYNC</h3></button>
             </div>
             <div class="col-2">
               <a href="https://twitter.com/unibotz/status/1442473957056204808?s=20"><img src="../assets/twitter.png" alt="" style="width: 25px;"></a>
             </div>
-            <div class="col-2">
+            <div class="col-1">
               <a href="https://discord.gg/pgXpkzv9"><img src="../assets/discord.png" alt="" style="width: 20px;"></a>
             </div>
           </div>
@@ -329,7 +329,7 @@
     <div>
       <br /><br />
       <div class="mx-auto" id="fadeshow1">
-        <center><img src="/assets/unibotz/titulos/Recurso 16.png" alt=""></center>
+        <center><img id="about" src="/assets/unibotz/titulos/Recurso 16.png" alt=""></center>
       </div>
       <div class="mx-auto" id="fadeshow2">
         <center><img src="/assets/unibotz/titulos/Recurso 16.png" alt="" style="width: 90%;"></center>
@@ -344,7 +344,7 @@
             <p class="card-text" style="color: black;">4210 BOTS ARE BEING ASSEMBLED TO SUPORT THE CLEAN NFTs MOVEMENT AND THE USAGE OF <span style="color: rgb(80,107,225,255);">RENEWABLE ENERGIES.</span></p>
           </div>
         </div>
-        <br /><br /><br /><br />
+        <br /><br /><br />
       </div>
     </div>
 
@@ -391,7 +391,8 @@
 
 
       <div class=" col-lg-5 col-m-9 mx-auto">
-        <center><h2 style="color: white;">THE UNIBOTZ FUND HAS TWO CLEAR MISSIONS:</h2></center>
+        <center><h2 style="color: white;" id="fadeshow1">THE UNIBOTZ FUND HAS TWO CLEAR MISSIONS:</h2></center>
+        <center><h2 style="color: white; font-size: 14px;" id="fadeshow2">THE UNIBOTZ FUND HAS TWO CLEAR MISSIONS:</h2></center>
         <center><img src="/assets/unibotz/Pantallas/Pantallayplanta (1).png" alt="" style="width: 50%;"></center>
       </div>
       <div class="mx-auto" id="fadeshow1">
@@ -471,20 +472,22 @@
     </div>
     
     <div>
-      <div class="container">
-        <br /><br />
-        <center><h2>The Team</h2></center>
+      <div class="container" id="fadeshow1">
+        <br /><br /><br /><br /><br />
+        <center><h2 id="team">The Team</h2></center>
         <br /><br />
         <div class="container">
           <div class="row">
             <div class="col-2">
-              <img src="../assets/unibotz/team/kaloh1.jpeg" alt="" style="width: 100%; height: 150px;">
+              <img src="../assets/unibotz/team/kaloh1.jpeg" alt="" style="width: 125px; height: 125px;">
             </div>
             <div class="col-10">
               <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
-                <div class="card-body" style="height: 150px;">
+                <div class="card-body" style="height: 70px;">
                   <p class="card-text"><span style="color: rgb(14, 211, 14);">Kaloh</span> writer (https://www.kaloh.xyz/) and collector.</p>
-                    <a href="https://twitter.com/Kaloh_nft"><img src="/assets/twitter.png" alt="" style="width: 4%; margin-left: 95%; margin-top: 6%;"></a>
+                </div>
+                <div class="card-footer">
+                  <a href="https://twitter.com/Kaloh_nft"><img src="/assets/twitter.png" alt="" style="width: 4%; margin-left: 95%;"></a>
                 </div>
               </div>
             </div>
@@ -493,13 +496,15 @@
 
           <div class="row">
             <div class="col-2">
-              <img src="../assets/unibotz/team/multivac1.jpg" alt="" style="width: 100%; height: 150px;">
+              <img src="../assets/unibotz/team/multivac1.jpg" alt="" style="width: 125px; height: 125px;">
             </div>
             <div class="col-10">
               <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
-                <div class="card-body" style="height: 150px;">
+                <div class="card-body" style="height: 70px;">
                   <p class="card-text"><span style="color: rgb(14, 211, 14);">Multivac</span> ( @Binja (Multivac) and @Fedelen ) - Group of artists and designers.</p>
-                    <a href="https://twitter.com/Multivac001"><img src="/assets/twitter.png" alt="" style="width: 4%; margin-left: 95%; margin-top: 6%;"></a>
+                </div>
+                <div class="card-footer">
+                  <a href="https://twitter.com/Multivac001"><img src="/assets/twitter.png" alt="" style="width: 4%; margin-left: 95%;"></a>
                 </div>
               </div>
             </div>
@@ -508,13 +513,15 @@
 
           <div class="row">
             <div class="col-2">
-              <img src="../assets/unibotz/team/datzel1.jpeg" alt="" style="width: 100%; height: 150px;">
+              <img src="../assets/unibotz/team/datzel1.jpeg" alt="" style="width: 125px; height: 125px;">
             </div>
             <div class="col-10">
               <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
-                <div class="card-body" style="height: 150px;">
+                <div class="card-body" style="height: 70px;">
                   <p class="card-text"><span style="color: rgb(14, 211, 14);">Datzel</span> Artist and community builder.</p>
-                  <a href="https://twitter.com/Datzel3"><img src="/assets/twitter.png" alt="" style="width: 4%; margin-left: 95%; margin-top: 6%;"></a>
+                </div>
+                <div class="card-footer">
+                  <a href="https://twitter.com/Datzel3"><img src="/assets/twitter.png" alt="" style="width: 4%; margin-left: 95%;"></a>
                 </div>
               </div>
             </div>
@@ -522,13 +529,15 @@
           <p></p>
           <div class="row">
             <div class="col-2">
-              <img src="../assets/unibotz/team/cabline1.jpeg" alt="" style="width: 100%; height: 150px;">
+              <img src="../assets/unibotz/team/cabline1.jpeg" alt="" style="width: 125px; height: 125px;">
             </div>
             <div class="col-10">
               <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
-                <div class="card-body" style="height: 150px;">
+                <div class="card-body" style="height: 70px;">
                   <p class="card-text"><span style="color: rgb(14, 211, 14);">Cabline</span> Art and curator expert.</p>
-                  <a href="https://twitter.com/cabline1"><img src="/assets/twitter.png" alt="" style="width: 4%; margin-left: 95%; margin-top: 6%;"></a>
+                </div>
+                <div class="card-footer">
+                  <a href="https://twitter.com/cabline1"><img src="/assets/twitter.png" alt="" style="width: 4%; margin-left: 95%;"></a>
                 </div>
               </div>
             </div>
@@ -536,13 +545,89 @@
           <p></p>
           <div class="row">
             <div class="col-2">
-              <img src="../assets/unibotz/team/programadores1.jpeg" alt="" style="width: 100%; height: 150px;">
+              <img src="../assets/unibotz/team/programadores1.jpeg" alt="" style="width: 125px; height: 125px;">
             </div>
             <div class="col-10">
               <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
-                <div class="card-body" style="height: 150px;">
-                  <p class="card-text"><span style="color: rgb(14, 211, 14);">Developers</span> Tezos OG creating dark and wicked pieces. Supporting up-and-coming artists from his own pocket for a long time - URL / Twitter</p>
-                  <a href="https://twitter.com/"><img src="/assets/twitter.png" alt="" style="width: 4%; margin-left: 95%; margin-top: 6%;"></a>
+                <div class="card-body" style="height: 70px;">
+                  <p class="card-text"><span style="color: rgb(14, 211, 14);">Developers</span> ( @Tlalocman and @Jupiter ) - Group of developers.</p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://twitter.com/cabline1"><img src="/assets/twitter.png" alt="" style="width: 4%; margin-left: 95%;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="fadeshow2">
+        <br /><br />
+        <center><h2>The Team</h2></center>
+        <br /><br />
+        <div class="container">
+          <div class="">
+            <div class="mx-auto">
+              <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
+                <div class="card-body" style="height: 70px;">
+                  <p class="card-text"><span style="color: rgb(14, 211, 14);">Kaloh</span> writer (https://www.kaloh.xyz/) and collector.</p>
+                </div>
+                <div class="card-footer"  style="height: 40px;">
+                  <a href="https://twitter.com/Kaloh_nft"><img src="/assets/twitter.png" alt="" style="width: 7%; margin-left: 95%;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p></p>
+
+          <div class="">
+            <div class="mx-auto">
+              <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
+                <div class="card-body" style="height: 70px;">
+                  <p class="card-text"><span style="color: rgb(14, 211, 14);">Multivac</span> ( @Binja (Multivac) and @Fedelen ) - Group of artists and designers.</p>
+                </div>
+                <div class="card-footer" style="height: 40px;">
+                  <a href="https://twitter.com/Multivac001"><img src="/assets/twitter.png" alt="" style="width: 7%; margin-left: 95%;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p></p>
+
+          <div class="">
+            <div class="mx-auto">
+              <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
+                <div class="card-body" style="height: 70px;">
+                  <p class="card-text"><span style="color: rgb(14, 211, 14);">Datzel</span> Artist and community builder.</p>
+                </div>
+                <div class="card-footer" style="height: 40px;">
+                  <a href="https://twitter.com/Datzel3"><img src="/assets/twitter.png" alt="" style="width: 7%; margin-left: 95%;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p></p>
+          <div class="">
+            <div class="mx-auto">
+              <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
+                <div class="card-body" style="height: 70px;">
+                  <p class="card-text"><span style="color: rgb(14, 211, 14);">Cabline</span> Art and curator expert.</p>
+                </div>
+                <div class="card-footer" style="height: 40px;">
+                  <a href="https://twitter.com/cabline1"><img src="/assets/twitter.png" alt="" style="width: 7%; margin-left: 95%;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p></p>
+          <div class="">
+            <div class="mx-auto">
+              <div class="card" style="width: 100%; background-color: rgb(5,62,63,255)">
+                <div class="card-body" style="height: 70px;">
+                  <p class="card-text"><span style="color: rgb(14, 211, 14);">Developers</span> ( @Tlalocman and @Jupiter ) - Group of developers.</p>
+                </div>
+                <div class="card-footer" style="height: 40px;">
+                  <a href="https://twitter.com/cabline1"><img src="/assets/twitter.png" alt="" style="width: 7%; margin-left: 95%;"></a>
                 </div>
               </div>
             </div>
