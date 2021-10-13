@@ -164,12 +164,71 @@
         } 
       }
     </style>
-    
+    <style>
+      #hideMe {
+    -moz-animation: cssAnimation 0s ease-in 4s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 4s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 4s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 4s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+    </style>
+<style>
+  #showMe {
+-moz-animation: cssAnimation 0s ease-in 4s forwards;
+/* Firefox */
+-webkit-animation: cssAnimation 0s ease-in 4s forwards;
+/* Safari and Chrome */
+-o-animation: cssAnimation 0s ease-in 4s forwards;
+/* Opera */
+animation: cssAnimation 0s ease-in 4s forwards;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+to {
+    width:0;
+    height:0;
+    overflow:visible;
+}
+}
+@-webkit-keyframes cssAnimation {
+to {
+    width:0;
+    height:0;
+    visibility:visible;
+}
+}
+</style>
   </head>
 
   <body>
     <br />
-    <nav class="navbar  navbar-expand-lg navbar-light">
+    <div id='hideMe' class="container mx-auto">
+      <img src="/assets/loading.gif" style="width: 100%;">
+    </div>
+    <div id='hideMe'>
+
+    </div>
+    <nav id="nav_load"class="navbar  navbar-expand-lg navbar-light">
       
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         
