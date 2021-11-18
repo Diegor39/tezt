@@ -280,31 +280,34 @@
           </div> 
         </div>    
       </nav>
-
-
-      <div class="container">
-        <div class="quantity-control" data-quantity="">
-          <button onclick="calcular()" class="quantity-btn" data-quantity-minus=""><svg viewBox="0 0 409.6 409.6">
-              <g>
-                <g>
-                  <path d="M392.533,187.733H17.067C7.641,187.733,0,195.374,0,204.8s7.641,17.067,17.067,17.067h375.467 c9.426,0,17.067-7.641,17.067-17.067S401.959,187.733,392.533,187.733z" />
-                </g>
-              </g>
-            </svg></button>
-          <input  oninput="calcular()" type="number" class="quantity-input" data-quantity-target="" min="1" max="10" value="1" name="quantity" id="valor1" step="1">
-          <button onclick="calcular()" class="quantity-btn" data-quantity-plus=""><svg viewBox="0 0 426.66667 426.66667">
-              <path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0" /></svg>
-          </button>
+      
+      <div style="position: relative;">
+      <img src="../assets/unibotz/Buttons/Buttons_Amount_sign.png" style="width: 30%; position: relative; left: 0; top: 0;">
+      <img src="../assets/unibotz/Buttons/Buttons_Amount_1.png" id="co1" style="width: 30%; display: none; position: absolute; left: 0; top: 0;">
+      <img src="../assets/unibotz/Buttons/Buttons_Amount_2.png" id="co2" style="width: 30%; display: none; position: absolute; left: 0; top: 0;" position: absolute; left: 0; top: 0;>
+      <img src="../assets/unibotz/Buttons/Buttons_Amount_3.png" id="co3" style="width: 30%; display: none; position: absolute; left: 0; top: 0;">
+      <img src="../assets/unibotz/Buttons/Buttons_Amount_4.png"  id="co4" style="width: 30%; display: none; position: absolute; left: 0; top: 0;">
+      <img src="../assets/unibotz/Buttons/Buttons_Amount_5.png" id="co5" style="width: 30%; display: none; position: absolute; left: 0; top: 0;">
+      <img src="../assets/unibotz/Buttons/Buttons_Amount_6.png" id="co6" style="width: 30%; display: none; position: absolute; left: 0; top: 0;">
+      <img src="../assets/unibotz/Buttons/Buttons_Amount_7.png" id="co7" style="width: 30%; display: none; position: absolute; left: 0; top: 0;">
+      <img src="../assets/unibotz/Buttons/Buttons_Amount_8.png" id="co8" style="width: 30%; display: none; position: absolute; left: 0; top: 0;">
+      <img src="../assets/unibotz/Buttons/Buttons_Amount_9.png"  id="co9" style="width: 30%; display: none; position: absolute; left: 0; top: 0;">
+      <img src="../assets/unibotz/Buttons/Buttons_Amount_10.png" id="co10" style="width: 30%; display: none; position: absolute; left: 0; top: 0;">
+      </div>
+      <div style="margin-left: 9%;">
+        <div class="quantity- control" data-quantity="">
+          <input id="menos" type="image" class="button" onclick="calcular(); changeImagemin(); calcular1()" class="quantity-btn" data-quantity-minus="" src="../assets/unibotz/Buttons/Buttons_Minus_normal.png" style="width: 4.8%;" >
+          <input  oninput="calcular(); calcular1()" type="number"  data-quantity-target="" min="1" max="10" value="1" name="quantity" id="valor1" step="1">
+          <input id="mas" type="image" class="button" onclick="calcular(); changeImagemas(); calcular1()" class="quantity-btn" data-quantity-plus="" src="../assets/unibotz/Buttons/Buttons_Plus_normal.png" style="width: 4.8%;">
         </div>
+        <input type="image" class="button" id="contractCall" src="../assets/unibotz/Buttons/Buttons_Mint_normal.png" style="width: 13.5%;" onclick="changeImage()">
       </div>
 
       <br /><br />
-  <input type="number" min="1" max="10">
-  <H4>Total: $ <input type="number" id="total" style="display: none;"> XTZ</H4> 
-  <H4>Total: $ <input type="number" id="total2"> XTZ</H4> 
+  <H4><input type="number" id="total" style="display: none;"></H4> 
+  <H4>Unidades: $ <input type="number" id="total2"></H4> 
   <H4>Total: $ <input type="number" id="totala"> XTZ</H4> 
-  <H4>Total: $ <input type="number" id="totalb"> XTZ</H4>   
-  <button id="contractCall">Comprar</button>
+  <H4>Precio: $ <input type="number" id="totalb"> XTZ</H4>
   <button id="reset">Reset and Refresh</button>
   <br /><br />
   
@@ -507,23 +510,18 @@
       <div id="fadeshow2">
         <center><img src="/assets/unibotz/stats/roadmap-06.png" style="width: 100%;" alt=""></center>
       </div>
-  
-      <div class="mx-auto col-lg-5 col-m-9 mx-auto">
-        <br /><br />
-        <center><img src="/assets/unibotz/Pantallas/Pantallayplanta2 (1).png" alt="" style="width: 50%;"></center>
-        <center><h2 id="fadeshow1" style="color: rgb(69,169,224,255);">DONATION TO (ORG)</h2></center>
-        <center><h2 id="fadeshow2" style="color: rgb(69,169,224,255); font-size: 13PX;">DONATION TO (ORG)</h2></center>
+
+      <div class="container" id="fadeshow1">
+        <br /><br /><br />
+        <center><img src="/assets/unibotz/stats/donation-06.png" style="width: 100%;" alt=""></center>
       </div>
-      <br />
-      <div class="mx-auto col-lg-5 col-m-9;">
-        <p style="color: white;">
-          WE WANT TO MAKE A BIG IMPACT OUT OF THE GATES. THAT IS WHY WE WILL <span style="color: rgb(80,107,225,255);">DONATE 5%</span> OF THE LAUNCH EARNINGS TO AN 
-          ORGANIZATION ALIGNED WITH OUR VALUES.
-        </p>
+      <div id="fadeshow2">
+        <br /><br /><br />
+        <center><img src="/assets/unibotz/stats/donation-06.png" style="width: 100%;" alt=""></center>
       </div>
 
       <div class="container">
-        <br /><br /><br />
+        
         <div class="">
           <center><h2 id="stats">STATS</h2></center>
           <img src="/assets/unibotz/stats/stats-2.png" style="width: 100%; margin-top: -7%;" alt="">
@@ -647,14 +645,6 @@
 
     </div>
 
-    
-    
-
-      
-
-
-    
-
 
 <div style="display:none">
   <button id="sendToSelf">Send 1 mutez to myself</button>
@@ -735,7 +725,6 @@
 </div>
 
 
-    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -1121,6 +1110,178 @@
   $.fn.Guantity = jQueryPlugin("Guantity", Guantity);
   $("[data-quantity]").Guantity();
 })();
+</script>
+
+<script language="javascript">
+  function changeImage() {
+
+      if (document.getElementById("contractCall").src == "../assets/unibotz/Buttons/Buttons_Mint_pressed.png") 
+      {
+          document.getElementById("contractCall").src = "../assets/unibotz/Buttons/Buttons_Mint_normal.png";
+      }
+      else 
+      {
+          document.getElementById("contractCall").src = "../assets/unibotz/Buttons/Buttons_Mint_pressed.png";
+      }
+  }
+  function changeImagemin() {
+
+if (document.getElementById("menos").src == "../assets/unibotz/Buttons/Buttons_Minus_pressed.png") 
+{
+    document.getElementById("menos").src = "../assets/unibotz/Buttons/Buttons_Minus_normal.png";
+}
+else 
+{
+    document.getElementById("menos").src = "../assets/unibotz/Buttons/Buttons_Minus_normal.png";
+}
+}
+function changeImagemas() {
+
+if (document.getElementById("mas").src == "../assets/unibotz/Buttons/Buttons_Plus_pressed.png") 
+{
+    document.getElementById("mas").src = "../assets/unibotz/Buttons/Buttons_Plus_normal.png";
+}
+else 
+{
+    document.getElementById("mas").src = "../assets/unibotz/Buttons/Buttons_Plus_pressed.png";
+}
+}
+</script>
+
+<script language="javascript">
+  var a=document.getElementById("co1");
+  var b=document.getElementById("co2");
+  var c=document.getElementById("co3");
+  var d=document.getElementById("co4");
+  var e=document.getElementById("co5");
+  var f=document.getElementById("co6");
+  var g=document.getElementById("co7");
+  var h=document.getElementById("co8");
+  var i=document.getElementById("co9");
+  var j=document.getElementById("co10");
+  
+  function calcular1(){
+      if(document.getElementById("valor1").value==1){
+          a.style.display="block";
+          b.style.display="none";
+          c.style.display="none";
+          d.style.display="none";
+          e.style.display="none";
+          f.style.display="none";
+          g.style.display="none";
+          h.style.display="none";
+          i.style.display="none";
+          j.style.display="none";
+      }
+      if(document.getElementById("valor1").value==2){
+          a.style.display="none";
+          b.style.display="block";
+          c.style.display="none";
+          d.style.display="none";
+          e.style.display="none";
+          f.style.display="none";
+          g.style.display="none";
+          h.style.display="none";
+          i.style.display="none";
+          j.style.display="none";
+      }
+      if(document.getElementById("valor1").value==3){
+          a.style.display="none";
+          b.style.display="none";
+          c.style.display="block";
+          d.style.display="none";
+          e.style.display="none";
+          f.style.display="none";
+          g.style.display="none";
+          h.style.display="none";
+          i.style.display="none";
+          j.style.display="none";
+      }
+      if(document.getElementById("valor1").value==4){
+          a.style.display="none";
+          b.style.display="none";
+          c.style.display="none";
+          d.style.display="block";
+          e.style.display="none";
+          f.style.display="none";
+          g.style.display="none";
+          h.style.display="none";
+          i.style.display="none";
+          j.style.display="none";
+      }
+      if(document.getElementById("valor1").value==5){
+          a.style.display="none";
+          b.style.display="none";
+          c.style.display="none";
+          d.style.display="none";
+          e.style.display="block";
+          f.style.display="none";
+          g.style.display="none";
+          h.style.display="none";
+          i.style.display="none";
+          j.style.display="none";
+      }
+      if(document.getElementById("valor1").value==6){
+          a.style.display="none";
+          b.style.display="none";
+          c.style.display="none";
+          d.style.display="none";
+          e.style.display="none";
+          f.style.display="block";
+          g.style.display="none";
+          h.style.display="none";
+          i.style.display="none";
+          j.style.display="none";
+      }
+      if(document.getElementById("valor1").value==7){
+          a.style.display="none";
+          b.style.display="none";
+          c.style.display="none";
+          d.style.display="none";
+          e.style.display="none";
+          f.style.display="none";
+          g.style.display="block";
+          h.style.display="none";
+          i.style.display="none";
+          j.style.display="none";
+      }
+      if(document.getElementById("valor1").value==8){
+          a.style.display="none";
+          b.style.display="none";
+          c.style.display="none";
+          d.style.display="none";
+          e.style.display="none";
+          f.style.display="none";
+          g.style.display="none";
+          h.style.display="block";
+          i.style.display="none";
+          j.style.display="none";
+      }
+      if(document.getElementById("valor1").value==9){
+          a.style.display="none";
+          b.style.display="none";
+          c.style.display="none";
+          d.style.display="none";
+          e.style.display="none";
+          f.style.display="none";
+          g.style.display="none";
+          h.style.display="none";
+          i.style.display="block";
+          j.style.display="none";
+      }
+      if(document.getElementById("valor1").value==10){
+          a.style.display="none";
+          b.style.display="none";
+          c.style.display="none";
+          d.style.display="none";
+          e.style.display="none";
+          f.style.display="none";
+          g.style.display="none";
+          h.style.display="none";
+          i.style.display="none";
+          j.style.display="block";
+      }
+  }   
 </script>
   </body>
 </html>
