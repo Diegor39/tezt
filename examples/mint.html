@@ -335,8 +335,8 @@
               </a>
             </div>
             <div class="col-2">
-              <button class="btn" id="requestPermission" style="background: NONE; border: none; outline: none;">
-                <h3 style="margin-top: -2.2%;color: rgb(135,184,111,255);">>CONNECT WALLET</h3>
+              <button class="btn" id="reset" style="background: NONE; border: none; outline: none;">
+                <h3 style="margin-top: -2.2%;color: rgb(135,184,111,255);">>DISCONNECT WALLET</h3>
               </button>
             </div>
             <div class="col-m" style="margin-left: 17%;">
@@ -369,7 +369,8 @@
     <p></p>
     <div id="fadeshow1">
       <center>
-        <span style="font-size: 10px;" style="display: none;">
+        <span style="font-size: 10px;">
+          connected:
           <span id="activeAccount"></span>
           <span id="activeAccountNetwork" style="display: none;"></span>
           <span id="activeAccountTransport" style="display: none;"></span>
@@ -377,14 +378,78 @@
       </center>
   
       <br /><br />
-      <center><h2 style="color: white; ">WE ARE IN PRESALE</h2></center><br />
       <center><div style="border-color: rgb(80,107,225,255); border-style: solid; width: 35%;">
         <p></p>
-        <h2 style="color: white; "  onclick="gotomint();"> <span style="color: rgb(135,184,111,255);"> Connect your wallet to mint </span></h2>
+        <h2 style="color: white; ">WE ARE IN PRESALE</h2>
       </div></center>
-      <button id="reset" style="display: none;" >Reset and Refresh</button>
+      <p></p>
+      <center><h3 style="color: rgb(75,162,153,255);">15 TXZ PER UNIBOTZ</h3></center>
+      <center><h3 style="color: rgb(75,162,153,255);"> Max 3 botz</h3></center>
+      <br /><br /><br />
+  
+      <div style="position: relative; " >
+        
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_sign.png"
+          style="width: 22%; position: relative; top: 0; left:39%">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_1.png" id="co1"
+          style="width: 22%; display: block; position: absolute; top: 0; left:39%;" >
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_2.png" id="co2"
+          style="width: 22%; display: none; position: absolute; left: 39%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_3.png" id="co3"
+          style="width: 22%; display: none; position: absolute; left: 39%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_4.png" id="co4"
+          style="width: 22%; display: none; position: absolute; left: 39%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_5.png" id="co5"
+          style="width: 22%; display: none; position: absolute; left: 39%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_6.png" id="co6"
+          style="width: 22%; display: none; position: absolute; left: 39%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_7.png" id="co7"
+          style="width: 22%; display: none; position: absolute; left: 39%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_8.png" id="co8"
+          style="width: 22%; display: none; position: absolute; left: 39%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_9.png" id="co9"
+          style="width: 22%; display: none; position: absolute; left: 39%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_10.png" id="co10"
+          style="width: 22%; display: none; position: absolute; left: 39%; top: 0;">
+      </div>
       
-      <br />
+  
+      <center>
+        <div >
+          <div class="mx-auto">
+       
+  
+            <button id="menos1" class="pressmin" onclick="stepDown(); calcular(); calcular1()" 
+              style="width: 6.5%; background: none; border: none; outline: none;;"><img id="menos" style="width: 100%;"
+                src="../assets/unibotz/Buttons/Buttons_Minus_normal.png"   alt=""></button>
+              
+            
+  
+            <button id="mas1" class="pressmas" onclick="stepUp(); calcular(); calcular1()"
+              style="width: 6.5%;background: none; border: none; outline: none; "><img id="mas" style="width: 100%;"
+                src="../assets/unibotz/Buttons/Buttons_Plus_normal.png" alt="" ></button>
+            
+    
+            <input oninput="calcular(); calcular1()" type="number" min="1" max="3" value="1" id="valor1" step="1" style="display: none;">
+            
+          </div>
+          <p></p>
+          
+          
+          <input type="image" class="button" id="contractCall" src="../assets/unibotz/Buttons/Buttons_Mint_normal.png"
+            style="width: 10%; ">
+        </div>
+      </center>
+      <P></P>
+      <h1 class="mypanel" style="color: rgb(75,162,153);"></h1>
+      <br /><br />
+      <H4 style="display: none;"><input type="number" id="total" style="display: none;"></H4>
+      <H4 style="display: none;">Unidades: $ <input type="number" id="total2" style="display: none;"></H4>
+      <H4 style="display: none;">Total: $ <input type="number" id="totala" style="display: none;"> XTZ</H4>
+      <H4 style="display: none;">Precio: $ <input type="number" id="totalb" > XTZ</H4>
+      <button id="reset" style="display: none;">Reset and Refresh</button>
+      
+      <br /><br />
 
     </div>
 
@@ -402,8 +467,7 @@
     </div>
 
     <div class="container" id="fadeshow2">
-      <br />
-      <center><h1 style="font-size: 17px; color: rgb(135,184,111,255);">To mint go to a desktop device</h1></center><br />
+      <br /><br />
       <center><img src="../assets/unibotz/logos/logoanimado.gif" alt="" style="width: 90%;"></center>
       <br />
       <h3 class="mx-auto" style="color: white;text-align: center; width: 80%; font-size: 10px;">BATTLING FOR A
@@ -411,7 +475,7 @@
       <br /><br /><br />
       <center>
         <h1 class="line-1 anim-typewriter" style="font-size: 17px">ARE YOU READY?</h1>
-        
+        <h1 style="font-size: 17px">To mint go to a Desktop device</h1>
       </center>
       <br /><br />
     </div>
@@ -632,9 +696,6 @@
               <p><span style="color: rgb(14, 211, 14);"><a style="color: rgb(14, 211, 14);" target="_blank"
                     href="https://twitter.com/Datzel3">Datzel</a> <br /></span> Artist and community builder. <br /></p>
 
-              <p><span style="color: rgb(14, 211, 14);"><a style="color: rgb(14, 211, 14);" target="_blank"
-                    href="https://twitter.com/cabline1">Cabline</a> <br /></span> Art and curator expert. <br /></p>
-
               <p><span style="color: rgb(14, 211, 14);">Tlalocman<br /></span> Smart Contract Developer.</p>
 
               <p><span style="color: rgb(14, 211, 14);">Jupiter<br /></span> Full Stack Developer.</p>
@@ -643,8 +704,6 @@
             <div class="col-5">
               <img src="/assets/unibotz/team/galeria_botz.png" alt="" style="width: 100%;">
             </div>
-            
-
           </div>
           <br /><br />
           <center>
@@ -652,7 +711,6 @@
           </center>
           <p><span style="color: rgb(14, 211, 14);"><a style="color: rgb(14, 211, 14);" target="_blank"
             href="https://twitter.com/cabline1">Cabline</a> <br /></span> Art and curator expert. <br /></p>
-
         </div>
       </div>
 
@@ -681,11 +739,11 @@
 
             <p><span style="color: rgb(14, 211, 14);">Jupiter<br /></span> Full Stack Developer.</p>
             <br />
-          <center>
-            <h2 style="color: rgb(135,184,111,255);">Honorary Advisor</h2>
-          </center>
-          <p><span style="color: rgb(14, 211, 14);"><a style="color: rgb(14, 211, 14);" target="_blank"
-            href="https://twitter.com/cabline1">Cabline</a> <br /></span> Art and curator expert. <br /></p>
+            <center>
+                <h2 style="color: rgb(135,184,111,255);">Honorary Advisor</h2>
+              </center>
+              <p><span style="color: rgb(14, 211, 14);"><a style="color: rgb(14, 211, 14);" target="_blank"
+                href="https://twitter.com/cabline1">Cabline</a> <br /></span> Art and curator expert. <br /></p>
 
           </div>
         </div>
@@ -700,7 +758,6 @@
         <p style="color: rgb(135,184,111,255);">SMART CONTRACT: KT1LuyieJRcpZXfZM7SmMKuWtCskenLwKYSX</p>
         <p style="color: rgb(135,184,111,255);">CROWDSALE: KT1HFHG7vhP658yM61u8HxVSjx1q3q4rGqLG</p>
       </center>
-      
       <br /><br />
     </div>
 
@@ -890,17 +947,17 @@
           connectdie ="no conectado"
           
         }
-        console.log(connectdie)
-        if (connectdie == "conectado"){
-          window.location.href="mint.html";
+        if (connectdie == "no conectado"){
+          window.location.href="landing_page.html";
 
         } 
-        
       })
       
     }
+    updateActiveAccount()
     
-    updateActiveAccount() 
+
+    
 
     // Display the active account in the UI
     const updateColorMode = () => {
@@ -940,7 +997,7 @@
     // Initiate a permission request
     const requestPermission = (callback) => {
       client
-        .requestPermissions({ network: { type: beacon.NetworkType.GRANADANET } })
+        .requestPermissions(/*{ network: { type: beacon.NetworkType.GRANADANET } }*/)
         .then((permissions) => {
           console.log('permissions', permissions)
           if (callback) {
@@ -1384,13 +1441,18 @@
     function stepDown() {
       document.getElementById('valor1').stepDown();
     }
+    window.onload = function() {
+        try {
+        var a = parseFloat(document.getElementById("valor1").value),
+          b = new Number(15000000.00);
+        b2 = new Number(15.00);
+        document.getElementById("total").value = a * b;
+        document.getElementById("total2").value = a * b2;
+        document.getElementById("totala").value = a;
+        document.getElementById("totalb").value = b2;
+      } catch (e) { }
+    };
   </script>
-  <script>
-    
-    function gotomint() {
-      document.getElementById("requestPermission").click();
-    }
-    </script>
 
 </body>
 
