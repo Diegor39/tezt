@@ -335,7 +335,7 @@
               </a>
             </div>
             <div class="col-2">
-              <button class="btn" id="reset" style="background: NONE; border: none; outline: none;">
+              <button class="btn" onclick="reset();" style="background: NONE; border: none; outline: none;">
                 <h3 style="margin-top: -2.2%;color: rgb(135,184,111,255);">>DISCONNECT WALLET</h3>
               </button>
             </div>
@@ -355,11 +355,16 @@
     <div class="container" id="fadeshow2">
       <div>
         <div class="row " style="width: 100%;">
-          <div class="" style="margin-left: 80%;">
+          <div class="col-8">
+            <button class="btn" id="reset" style="background: NONE; border: none; outline: none;">
+              <h3 style="color: rgb(135,184,111,255);">>DISCONNECT</h3>
+            </button>
+          </div>     
+          <div class="col-1" style="margin-left: 10%;">
             <a href="https://twitter.com/unibotz" target="_blank"><img src="../assets/twitter.png" alt=""
                 style="width: 25px;"></a>
           </div>
-          <div class="" style="margin-left: 5%;">
+          <div class="col-1" style="margin-left: 5%;">
             <a href="https://discord.gg/s46KD2hhKy" target="_blank"><img src="../assets/discord.png" alt=""
                 style="width: 20px;"></a>
           </div>
@@ -367,24 +372,25 @@
       </div>
     </div>
     <p></p>
+    <center>
+      <span style="font-size: 10px;">
+        connected:
+        <span id="activeAccount"></span>
+        <span id="activeAccountNetwork" style="display: none;"></span>
+        <span id="activeAccountTransport" style="display: none;"></span>
+      </span>
+    </center>
     <div id="fadeshow1">
-      <center>
-        <span style="font-size: 10px;">
-          connected:
-          <span id="activeAccount"></span>
-          <span id="activeAccountNetwork" style="display: none;"></span>
-          <span id="activeAccountTransport" style="display: none;"></span>
-        </span>
-      </center>
+      
   
-      <br /><br />
+      <br />
       <center><div style="border-color: rgb(80,107,225,255); border-style: solid; width: 35%;">
         <p></p>
-        <h2 style="color: white; ">WE ARE IN PRESALE</h2>
+        <h2 style="color: white; ">WE ARE IN PUBLIC SALE</h2>
       </div></center>
       <p></p>
       <center><h3 style="color: rgb(75,162,153,255);">15 XTZ PER UNIBOTZ</h3></center>
-      <center><h3 style="color: rgb(75,162,153,255);"> Max 3 botz</h3></center>
+      <center><h3 style="color: rgb(75,162,153,255);"> Max 10 botz</h3></center>
       <br /><br /><br />
   
       <div style="position: relative; " >
@@ -430,7 +436,7 @@
                 src="../assets/unibotz/Buttons/Buttons_Plus_normal.png" alt="" ></button>
             
     
-            <input oninput="calcular(); calcular1()" type="number" min="1" max="3" value="1" id="valor1" step="1" style="display: none;">
+            <input oninput="calcular(); calcular1()" type="number" min="1" max="10" value="1" id="valor1" step="1" style="display: none;">
             
           </div>
           <p></p>
@@ -442,13 +448,83 @@
       </center>
       <P></P>
       <h1 class="mypanel" style="color: rgb(75,162,153);"></h1>
-      <br /><br />
+      
+
+    </div>
+    <br /><br />
       <H4 style="display: none;"><input type="number" id="total" style="display: none;"></H4>
       <H4 style="display: none;">Unidades: $ <input type="number" id="total2" style="display: none;"></H4>
       <H4 style="display: none;">Total: $ <input type="number" id="totala" style="display: none;"> XTZ</H4>
       <H4 style="display: none;">Precio: $ <input type="number" id="totalb" > XTZ</H4>
       <button id="reset" style="display: none;">Reset and Refresh</button>
       
+      <br /><br />
+
+    <div id="fadeshow2">
+  
+      <center><div style="border-color: rgb(80,107,225,255); border-style: solid; width: 80%;">
+        <p></p>
+        <h3 style="color: white; ">WE ARE IN PRESALE</h3>
+      </div></center>
+      <p></p>
+      <center><h3 style="color: rgb(75,162,153,255); font-size: 12px;">15 XTZ PER UNIBOTZ</h3></center>
+      <center><h3 style="color: rgb(75,162,153,255); font-size: 12px;"> Max 10 botz</h3></center>
+      <br /><br />
+  
+      <div style="position: relative; " >
+        
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_sign.png"
+          style="width: 50%; position: relative; top: 0; left:25%">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_1.png" id="1co1"
+          style="width: 50%; display: block; position: absolute; top: 0; left:25%;" >
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_2.png" id="1co2"
+          style="width: 50%; display: none; position: absolute; left: 25%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_3.png" id="1co3"
+          style="width: 50%; display: none; position: absolute; left: 25%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_4.png" id="1co4"
+          style="width: 50%; display: none; position: absolute; left: 25%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_5.png" id="1co5"
+          style="width: 50%; display: none; position: absolute; left: 25%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_6.png" id="1co6"
+          style="width: 50%; display: none; position: absolute; left: 25%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_7.png" id="1co7"
+          style="width: 50%; display: none; position: absolute; left: 25%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_8.png" id="1co8"
+          style="width: 50%; display: none; position: absolute; left: 25%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_9.png" id="1co9"
+          style="width: 50%; display: none; position: absolute; left: 25%; top: 0;">
+        <img src="../assets/unibotz/Buttons/Buttons_Amount_10.png" id="1co10"
+          style="width: 50%; display: none; position: absolute; left: 25%; top: 0;">
+      </div>
+      
+  
+      <center>
+        <div >
+          <div class="mx-auto">
+       
+  
+            <button id="menos1" class="pressmin" onclick="stepDown(); calcular(); calcular1()" 
+              style="width: 18.5%; background: none; border: none; outline: none;;"><img id="menos" style="width: 100%;"
+                src="../assets/unibotz/Buttons/Buttons_Minus_normal.png"   alt=""></button>
+              
+            
+  
+            <button id="mas1" class="pressmas" onclick="stepUp(); calcular(); calcular1()"
+              style="width: 18.5%;background: none; border: none; outline: none; "><img id="mas" style="width: 100%;"
+                src="../assets/unibotz/Buttons/Buttons_Plus_normal.png" alt="" ></button>
+            
+            
+          </div>
+          <p></p>
+          
+          
+          <input type="image" class="button" src="../assets/unibotz/Buttons/Buttons_Mint_normal.png"
+            style="width: 25%;" onclick="mintfinal()">
+        </div>
+      </center>
+      <P></P>
+      <h1 class="mypanel" style="color: rgb(75,162,153);"></h1>
+      <br /><br />
       <br /><br />
 
     </div>
@@ -475,7 +551,6 @@
       <br /><br /><br />
       <center>
         <h1 class="line-1 anim-typewriter" style="font-size: 17px">ARE YOU READY?</h1>
-        <h1 style="font-size: 17px">To mint go to a Desktop device</h1>
       </center>
       <br /><br />
     </div>
@@ -1309,6 +1384,16 @@
     var h = document.getElementById("co8");
     var i = document.getElementById("co9");
     var j = document.getElementById("co10");
+    var aa = document.getElementById("1co1");
+    var ba = document.getElementById("1co2");
+    var ca = document.getElementById("1co3");
+    var da = document.getElementById("1co4");
+    var ea = document.getElementById("1co5");
+    var fa = document.getElementById("1co6");
+    var ga = document.getElementById("1co7");
+    var ha = document.getElementById("1co8");
+    var ia = document.getElementById("1co9");
+    var ja = document.getElementById("1co10");
 
     function calcular1() {
       if (document.getElementById("valor1").value == 1) {
@@ -1322,6 +1407,16 @@
         h.style.display = "none";
         i.style.display = "none";
         j.style.display = "none";
+        aa.style.display = "block";
+        ba.style.display = "none";
+        ca.style.display = "none";
+        da.style.display = "none";
+        ea.style.display = "none";
+        fa.style.display = "none";
+        ga.style.display = "none";
+        ha.style.display = "none";
+        ia.style.display = "none";
+        ja.style.display = "none";
       }
       if (document.getElementById("valor1").value == 2) {
         a.style.display = "none";
@@ -1334,6 +1429,16 @@
         h.style.display = "none";
         i.style.display = "none";
         j.style.display = "none";
+        aa.style.display = "none";
+        ba.style.display = "block";
+        ca.style.display = "none";
+        da.style.display = "none";
+        ea.style.display = "none";
+        fa.style.display = "none";
+        ga.style.display = "none";
+        ha.style.display = "none";
+        ia.style.display = "none";
+        ja.style.display = "none";
       }
       if (document.getElementById("valor1").value == 3) {
         a.style.display = "none";
@@ -1346,6 +1451,16 @@
         h.style.display = "none";
         i.style.display = "none";
         j.style.display = "none";
+        aa.style.display = "none";
+        ba.style.display = "none";
+        ca.style.display = "block";
+        da.style.display = "none";
+        ea.style.display = "none";
+        fa.style.display = "none";
+        ga.style.display = "none";
+        ha.style.display = "none";
+        ia.style.display = "none";
+        ja.style.display = "none";
       }
       if (document.getElementById("valor1").value == 4) {
         a.style.display = "none";
@@ -1358,6 +1473,16 @@
         h.style.display = "none";
         i.style.display = "none";
         j.style.display = "none";
+        aa.style.display = "none";
+        ba.style.display = "none";
+        ca.style.display = "none";
+        da.style.display = "block";
+        ea.style.display = "none";
+        fa.style.display = "none";
+        ga.style.display = "none";
+        ha.style.display = "none";
+        ia.style.display = "none";
+        ja.style.display = "none";
       }
       if (document.getElementById("valor1").value == 5) {
         a.style.display = "none";
@@ -1370,6 +1495,16 @@
         h.style.display = "none";
         i.style.display = "none";
         j.style.display = "none";
+        aa.style.display = "none";
+        ba.style.display = "none";
+        ca.style.display = "none";
+        da.style.display = "none";
+        ea.style.display = "block";
+        fa.style.display = "none";
+        ga.style.display = "none";
+        ha.style.display = "none";
+        ia.style.display = "none";
+        ja.style.display = "none";
       }
       if (document.getElementById("valor1").value == 6) {
         a.style.display = "none";
@@ -1382,6 +1517,16 @@
         h.style.display = "none";
         i.style.display = "none";
         j.style.display = "none";
+        aa.style.display = "none";
+        ba.style.display = "none";
+        ca.style.display = "none";
+        da.style.display = "none";
+        ea.style.display = "none";
+        fa.style.display = "block";
+        ga.style.display = "none";
+        ha.style.display = "none";
+        ia.style.display = "none";
+        ja.style.display = "none";
       }
       if (document.getElementById("valor1").value == 7) {
         a.style.display = "none";
@@ -1394,6 +1539,16 @@
         h.style.display = "none";
         i.style.display = "none";
         j.style.display = "none";
+        aa.style.display = "none";
+        ba.style.display = "none";
+        ca.style.display = "none";
+        da.style.display = "none";
+        ea.style.display = "none";
+        fa.style.display = "none";
+        ga.style.display = "block";
+        ha.style.display = "none";
+        ia.style.display = "none";
+        ja.style.display = "none";
       }
       if (document.getElementById("valor1").value == 8) {
         a.style.display = "none";
@@ -1406,6 +1561,16 @@
         h.style.display = "block";
         i.style.display = "none";
         j.style.display = "none";
+        aa.style.display = "none";
+        ba.style.display = "none";
+        ca.style.display = "none";
+        da.style.display = "none";
+        ea.style.display = "none";
+        fa.style.display = "none";
+        ga.style.display = "none";
+        ha.style.display = "block";
+        ia.style.display = "none";
+        ja.style.display = "none";
       }
       if (document.getElementById("valor1").value == 9) {
         a.style.display = "none";
@@ -1418,6 +1583,16 @@
         h.style.display = "none";
         i.style.display = "block";
         j.style.display = "none";
+        aa.style.display = "none";
+        ba.style.display = "none";
+        ca.style.display = "none";
+        da.style.display = "none";
+        ea.style.display = "none";
+        fa.style.display = "none";
+        ga.style.display = "none";
+        ha.style.display = "none";
+        ia.style.display = "block";
+        ja.style.display = "none";
       }
       if (document.getElementById("valor1").value == 10) {
         a.style.display = "none";
@@ -1430,6 +1605,16 @@
         h.style.display = "none";
         i.style.display = "none";
         j.style.display = "block";
+        aa.style.display = "none";
+        ba.style.display = "none";
+        ca.style.display = "none";
+        da.style.display = "none";
+        ea.style.display = "none";
+        fa.style.display = "none";
+        ga.style.display = "none";
+        ha.style.display = "none";
+        ia.style.display = "none";
+        ja.style.display = "block";
       }
     }
   </script>
@@ -1452,6 +1637,15 @@
         document.getElementById("totalb").value = b2;
       } catch (e) { }
     };
+  </script>
+  <script>
+    function mintfinal() {
+      document.getElementById("contractCall").click();
+    }
+    function reset() {
+      document.getElementById("reset").click();
+    }
+    </script>
   </script>
 
 </body>

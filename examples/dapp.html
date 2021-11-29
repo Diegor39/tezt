@@ -336,8 +336,8 @@
             </div>
             <div class="col-2">
               <button class="btn" id="requestPermission" style="background: NONE; border: none; outline: none;">
-                <h3 style="margin-top: -2.2%;color: rgb(135,184,111,255);">>CONNECT WALLET</h3>
-              </button>
+                <h3 style="margin-top: -2.2%; color: rgb(135,184,111,255);">>CONNECT WALLET</h3></button>
+                
             </div>
             <div class="col-m" style="margin-left: 17%;">
               <a href="https://twitter.com/unibotz" target="_blank"><img src="../assets/twitter.png" alt=""
@@ -353,13 +353,17 @@
     </nav>
 
     <div class="container" id="fadeshow2">
-      <div>
+      <div>   
         <div class="row " style="width: 100%;">
-          <div class="" style="margin-left: 80%;">
+          <div class="col-8">
+            <button class="btn" onclick="gotomint();" style="background: NONE; border: none; outline: none;">
+              <h3 style="color: rgb(135,184,111,255);">>CONNECT</h3></button>
+          </div>
+          <div class="col-1" style="margin-left: 10%;">
             <a href="https://twitter.com/unibotz" target="_blank"><img src="../assets/twitter.png" alt=""
                 style="width: 25px;"></a>
           </div>
-          <div class="" style="margin-left: 5%;">
+          <div cclass="col-1" style="margin-left: 5%;">
             <a href="https://discord.gg/s46KD2hhKy" target="_blank"><img src="../assets/discord.png" alt=""
                 style="width: 20px;"></a>
           </div>
@@ -377,11 +381,13 @@
       </center>
   
       <br /><br />
-      <center><h2 style="color: white; ">WE ARE IN PRESALE</h2></center><br />
+      <center><h2 style="color: white; ">WE ARE IN PUBLIC SALE</h2></center><br />
       <center><div style="border-color: rgb(80,107,225,255); border-style: solid; width: 35%;">
         <p></p>
         <h2 style="color: white; "  onclick="gotomint();"> <span style="color: rgb(135,184,111,255);"> Connect your wallet to mint </span></h2>
       </div></center>
+      <br /><br />
+      <center><h1 class="mypanel" style="color: rgb(75,162,153);"></h1></center>
       <button id="reset" style="display: none;" >Reset and Refresh</button>
       
       <br />
@@ -403,7 +409,8 @@
 
     <div class="container" id="fadeshow2">
       <br />
-      <center><h1 style="font-size: 17px; color: rgb(135,184,111,255);">To mint go to a desktop device</h1></center><br />
+      <center><h1 class="mypanel" style="color: rgb(75,162,153);"></h1></center>
+      <br /><br /><br />
       <center><img src="../assets/unibotz/logos/logoanimado.gif" alt="" style="width: 90%;"></center>
       <br />
       <h3 class="mx-auto" style="color: white;text-align: center; width: 80%; font-size: 10px;">BATTLING FOR A
@@ -842,7 +849,7 @@
   <script>
     $.getJSON('https://api.tzkt.io/v1/contracts/KT1LuyieJRcpZXfZM7SmMKuWtCskenLwKYSX/storage', function (data) {
 
-      var text = `<center><h3 style="color: rgb(75,162,153,255)";>${data.token_index} / 4210 minted</h3></center>`
+      var text = `<h3 style="color: rgb(75,162,153,255)";>${data.token_index} / 4210 minted</h3>`
 
 
       $(".mypanel").html(text);
